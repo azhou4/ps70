@@ -1,0 +1,31 @@
+
+
+<nav id="sidebar-icon-links">
+    <a id="email-link"
+       class="icon" title="Email" 
+       aria-label="Email"
+       href="mailto: amy_zhou@college.harvard.edu">
+      {% include svg/email-logo.svg%}
+    </a>
+  {% if site.github.repo %}
+    <a id="github-link"
+       class="icon" title="Github" aria-label="Github"
+       href="{{ site.github.repo }}">
+      {% include svg/github.svg %}
+    </a>
+  {% endif %}
+  <a id="linkedin-link"
+     class="icon" 
+     title="LinkedIn" aria-label="LinkedIn"
+     href="https://www.linkedin.com/in/amymzhou">
+    {% include svg/linkedin-logo.svg %}
+  </a>
+    <a id="facebook-link"
+       class="icon"
+       title="Facebook" aria-label="Facebook"
+       href="https://www.facebook.com/amymzhou">
+      {% include svg/facebook-logo.svg %}
+    </a>
+
+  {% include custom-icon-links.html %}
+</nav>

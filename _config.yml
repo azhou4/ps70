@@ -1,0 +1,35 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Setup
+title:            amy zhou
+tagline:          'personal website'
+description:      "harvard college '21 || computer science & women gender studies major with a minor in education"
+url:              https://azhou4.github.io
+
+author:
+  name:           'Amy Zhou'
+  url:            https://linkedin.com/in/amymzhou
+
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# Sidebar link settings
+sidebar_home_link:  true
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
+github:
+  repo:             https://github.com/azhou4
+
+google_analytics: G-4DRGHE7H85
+
+remote_theme: fongandrew/hydeout
