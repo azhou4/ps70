@@ -7,7 +7,7 @@ title:            amy zhou
 tagline:          'personal website'
 description:      "harvard college '21 || computer science & women gender studies major with a minor in education"
 url:              https://azhou4.github.io
-baseurl:          '/ps70'
+baseurl:          '/'
 remote_theme: fongandrew/hydeout
 
 author:
