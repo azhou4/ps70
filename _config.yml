@@ -8,7 +8,6 @@ tagline:          'personal website'
 description:      "harvard college '21 || computer science & women gender studies major with a minor in education"
 url:              https://azhou4.github.io
 baseurl:          '/'
-remote_theme: fongandrew/hydeout
 
 author:
   name:           'Amy Zhou'
@@ -18,11 +17,12 @@ paginate:         5
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
+theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-include-cache
+remote_theme: fongandrew/hydeout
 
 # Sidebar link settings
 sidebar_home_link:  true
