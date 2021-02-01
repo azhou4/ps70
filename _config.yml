@@ -1,33 +1,26 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:         redcarpet
+highlighter:      pygments
+gems: [jekyll-paginate, jekyll-gist]
+paginate: 5
+paginate_path: "page:num"
+
+# Permalinks
+permalink:        pretty
 
 # Setup
-title:            amy zhou
-tagline:          'personal website'
-description:      "harvard college '21 || computer science & women gender studies major with a minor in education"
-url:              https://azhou4.github.io
-
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              amymzhou.com
+baseurl:          /
 
 author:
-  name:           'Amy Zhou'
-  url:            https://linkedin.com/in/amymzhou
+  name:           Amy Zhou
 
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
 
-theme: jekyll-theme-hydeout
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-remote_theme: fongandrew/hydeout
+# Custom vars
+version:          2.1.0
 
-# Sidebar link settings
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
-
+github:
+  repo:           https://github.com/azhou4/ps70
