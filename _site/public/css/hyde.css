@@ -45,6 +45,23 @@ html {
   }
 }
 
+/* Index grid */
+.index-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+/* .header {
+  grid-column: span 12;
+} */
+.navigation-menu {
+  grid-column: span 4;
+}
+.main-content {
+  grid-column: span 8;
+}
+/* .footer {
+  grid-column: span 12;
+} */
 
 /*
  * Sidebar
@@ -57,7 +74,7 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #479464;
 }
 @media (min-width: 48em) {
   .sidebar {
