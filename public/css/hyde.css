@@ -59,6 +59,7 @@ html {
 .main-content {
   grid-column: span 8;
 }
+
 /* .footer {
   grid-column: span 12;
 } */
