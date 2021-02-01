@@ -13,7 +13,7 @@ title:            Amy Zhou
 tagline:          'PS70 Documentation'
 description:      'Welcome to my PS70 documentation site!'
 url:              https://azhou4.github.io
-baseurl:          /
+baseurl:          /ps70/
 
 author:
   name:           Amy Zhou
