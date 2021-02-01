@@ -2,6 +2,33 @@
 layout: default
 title: Home
 ---
+<img src="assets/profile_az.jpg" alt="profile" class="center" width="80%"> 
+<script>
+	var example = ['a senior', 'in Mather House', 'a dog person', 'a design enthusiast', 'a CS/WGS concentrator'];
+
+	textSequence(0);
+	function textSequence(i) {
+
+		if (example.length > i) {
+			setTimeout(function() {
+				document.getElementById("sequence").innerHTML = example[i];
+				textSequence(++i);
+			}, 1000); // 1 second (milliseconds)
+
+		} else if (example.length == i) { // recurse
+			textSequence(0);
+		}
+
+	}
+</script>
+<h2 style="text-align: center"> Hi! My name is Amy. I'm <span id="sequence" style="color: rgb(116, 195, 237); opacity: 1;"></span>.
+</h2>
+
+<p style="text-align: center; margin-left: auto; margin-right:auto">
+	I’m Amy, a rising senior at Harvard College living in <a href="https://mather.harvard.edu/">Mather House</a> and studying computer science & women gender studies
+		with a secondary in education. I'm excited to be learning about electronics and building things with my own hands. 
+		I hope that by the end of the semester, I will be comfortable entering fablabs, laser cutting, and 3D printing on my own!
+</p>
 
 <div class="posts">
   {% for post in paginator.posts %}
