@@ -21,6 +21,6 @@ Afterwards, I tried it out on Fusion. I started with the arrows, reminiscient of
 
 ![Pentagon Design](assets/pentagon.png)
 
-After our design was complete, I moved to the next step of modeling kit items in Fusion 360 to create an assembly. I chose two battery-related objects. One is the red acellories portable battery and the other is a standard AA battery. There's probably a way to add colors in Fusion 360 but I didn't figure that out for this week. I also wasn't sure how to create the little wristband that the portable battery comes with. Without further ado...here is the finished assembly.
+After our design was complete, I moved to the next step of modeling kit items in Fusion 360 to create an assembly. I chose two battery-related objects. One is the red acellories portable battery and the other is a standard AA battery. There's probably a way to add colors in Fusion 360 but I didn't figure that out for this week. I also wasn't sure how to create the little wristband that the portable battery comes with. Without further ado...here is the finished assembly. At first, I thought my caliper was broken because it wasn't turning on -- then I realized I never put in the battery it came with!
 
 ![Assembly of Batteries](assets/assembly.png)
