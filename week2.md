@@ -5,7 +5,11 @@ title: Week 2 - 2D Design & Cutting
 
 This week, I worked with JuHye & Hugh to design our cardboard cutouts. JuHye had the great idea of designing a lightbox! 
 
-We decided to go with a pentagon shape with a small connector piece that would allow us to create a 3D box. What to do with the pentagon design? This was the fun part! 
+We decided to go with a pentagon shape with a small connector piece that would allow us to create a 3D box. 
+
+![3D version of Pentagon](assets/connector.png)
+
+What to do with the pentagon design? This was the fun part! 
 
 ![Pentagon Sketch](./assets/pentagon-sketch.jpg)
 
