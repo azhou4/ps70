@@ -21,10 +21,10 @@ With the overall structure complete, I started to add accessories! I wanted to c
 
 ![Third version](assets/hand-frame.gif)
 
-Because of the way my sculpture is built, all of the embellishments I added had to be light. The structure was already wobbly, adding heavy objects wouldn't help. I also needed to add equal weight to both sides so the weight would be balanced. I found two little koalas and had them cling to each side.
+Because of the way my sculpture is built, all of the embellishments I added had to be light. The structure was already wobbly and so adding heavy objects wouldn't help. I also needed to add equal weight to both sides so the weight would be balanced. I found two little koalas and had them cling to each side.
 
 Complete! I fiddled with the overall structure to center it a bit more to minimize wobbly-ness. 
 
 ![Last rendition](assets/carousel.gif)
 
-I'm not sure what I build. Maybe a carousel or something you'd find on a playground? This assignment really taught me how a little can go a long way. The ability to connect and run a motor opens up so many possibilities and so many things I can build. 
+I'm not sure what I built. Maybe a carousel or something you'd find on a playground? In any case, this assignment really taught me how a little can go a long way. The ability to connect and run a motor opens up so many possibilities and so many things I can build!
