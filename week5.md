@@ -32,4 +32,6 @@ I figured no matter how much I improved the scan, it still wouldn't look as cool
 
 <script src="https://embed.github.com/view/3d/azhou4/ps70/master/assets/stl/BananaKnightV2.stl"></script>
 
+You can find the file <a href="https://github.com/azhou4/ps70/blob/main/assets/stl/BananaKnightV2.stl"> here</a>!
+
 You're welcome Caleb and thank you Thingiverse!
