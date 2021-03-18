@@ -7,7 +7,7 @@ I've been inspired by everyone else's LED strip projects -- since I haven't work
 
 My idea was to build an LED strip that visualizes music. When music is played, it would light up corresponding to the loudness of the music. The louder it was, the more LEDs would light up. Obviously this is not a new idea, many people had done this already. I Googled around a bit to see how others had connected the microphone with the LED strip and tried to copy their solutions. But in the end, none of those worked. I actually spent an unfortunate amount of time on this -- after getting unnecessarily frustrated over this, I decided to create the code myself. To do this, I decided to build the microphone and LED components separately, get them to work, then combine the code myself.
 
-First, I set up the microphone. Although I set it up just like last week, I had some issues with the microphone this time. The data was very noisy, and it didn't seem like it was able to pick up differences between when I was talking, when I was playing music, or silence. Sometimes I felt like it did, but I couldn't tell if it was just confirmation bias or whether the microphone is pretty inconsistent. 
+First, I set up the microphone.  Although I set it up just like last week, I had some issues with the microphone this time. The data was very noisy, and it didn't seem like it was able to pick up differences between when I was talking, when I was playing music, or silence. Sometimes I felt like it did, but I couldn't tell if it was just confirmation bias or whether the microphone is pretty inconsistent. 
 
 ![Banana](assets/week7-mic.jpg)
 
@@ -31,6 +31,8 @@ The biggest issue is that my microphone didn't seem to pick up on sounds. I coul
 
 
 Code here: 
+
+
     #include <Adafruit_NeoPixel.h>
 
     #define PIN        9 
@@ -42,67 +44,67 @@ Code here:
     Adafruit_NeoPixel strip(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
     long previousMillis = 0; 
     void setup() {
-    Serial.begin(9600);
-    strip.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
-    strip.show();            // Turn OFF all pixels ASAP
-    strip.setBrightness(10); // Set BRIGHTNESS low to reduce draw (max = 255)
+        Serial.begin(9600);
+        strip.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
+        strip.show();            // Turn OFF all pixels ASAP
+        strip.setBrightness(10); // Set BRIGHTNESS low to reduce draw (max = 255)
     }
 
     void loop() {
-    strip.fill(strip.Color(0, 0, 0), 0);
-    strip.show();
-    strip.clear(); // Set all pixel colors to 'off'
-    unsigned long startMillis= millis();  // Start of sample window
+        strip.fill(strip.Color(0, 0, 0), 0);
+        strip.show();
+        strip.clear(); // Set all pixel colors to 'off'
+        unsigned long startMillis= millis();  // Start of sample window
         unsigned int peakToPeak = 0;   // peak-to-peak level
 
         unsigned int signalMax = 0;
         unsigned int signalMin = 1024;
         
 
-    // collect data for 50 mS
-    while (millis() - startMillis < sampleWindow)
-    {
-        sample = analogRead(0);   //reading DC pin from pin A0
-        if (sample < 1024)  // toss out spurious readings
+        // collect data for 50 mS
+        while (millis() - startMillis < sampleWindow)
         {
-            if (sample > signalMax)
+            sample = analogRead(0);   //reading DC pin from pin A0
+            if (sample < 1024)  // toss out spurious readings
             {
-                signalMax = sample;  // save just the max levels
-            }
-            else if (sample < signalMin)
-            {
-                signalMin = sample;  // save just the min levels
+                if (sample > signalMax)
+                {
+                    signalMax = sample;  // save just the max levels
+                }
+                else if (sample < signalMin)
+                {
+                    signalMin = sample;  // save just the min levels
+                }
             }
         }
-    }
-    peakToPeak = signalMax - signalMin;  // max - min = peak-peak amplitude
+        peakToPeak = signalMax - signalMin;  // max - min = peak-peak amplitude
 
-    Serial.println(peakToPeak);
-    if (peakToPeak > 60 and peakToPeak < 80) 
-    {
-        strip.fill(strip.Color(0, 150, 0), 0, 1);
-    } else if (peakToPeak >= 50 and peakToPeak < 60){
+        Serial.println(peakToPeak);
+        if (peakToPeak > 60 and peakToPeak < 80) 
+        {
+            strip.fill(strip.Color(0, 150, 0), 0, 1);
+        } else if (peakToPeak >= 50 and peakToPeak < 60){
             strip.fill(strip.Color(0, 150, 0), 0, 2);
-    } else if (peakToPeak >= 60 and peakToPeak < 70){
+        } else if (peakToPeak >= 60 and peakToPeak < 70){
             strip.fill(strip.Color(0, 150, 0), 0, 3);
-    } else if (peakToPeak >= 70 and peakToPeak < 80){
+        } else if (peakToPeak >= 70 and peakToPeak < 80){
             strip.fill(strip.Color(0, 150, 0), 0, 4);
-    } else if (peakToPeak >= 80 and peakToPeak < 90) {
+        } else if (peakToPeak >= 80 and peakToPeak < 90) {
             strip.fill(strip.Color(0, 150, 0), 0, 5);
-    } else if (peakToPeak >= 90 and peakToPeak < 120) {
+        } else if (peakToPeak >= 90 and peakToPeak < 120) {
             strip.fill(strip.Color(0, 150, 0), 0, 6);
-    } else if (peakToPeak >= 120 and peakToPeak < 140) {
-                strip.fill(strip.Color(0, 150, 0), 0, 7);
-    } else if (peakToPeak >= 140 and peakToPeak < 160) {
-                strip.fill(strip.Color(0, 150, 0), 0, 8);
-    } else if (peakToPeak >= 160 and peakToPeak < 180) {
-                strip.fill(strip.Color(0, 150, 0), 0, 9);
+        } else if (peakToPeak >= 120 and peakToPeak < 140) {
+            strip.fill(strip.Color(0, 150, 0), 0, 7);
+        } else if (peakToPeak >= 140 and peakToPeak < 160) {
+            strip.fill(strip.Color(0, 150, 0), 0, 8);
+        } else if (peakToPeak >= 160 and peakToPeak < 180) {
+            strip.fill(strip.Color(0, 150, 0), 0, 9);
         } else if (peakToPeak >= 180) {
-                strip.fill(strip.Color(0, 150, 0), 0, 10);
+            strip.fill(strip.Color(0, 150, 0), 0, 10);
         }
         strip.show();
         delay(DELAYVAL);
-        
-    }
+            
+        }
 
 Too bad I couldn't wrap my head around how to remove the last delay...next time!!
