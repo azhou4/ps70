@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Week 8 - Wired & Radio Communication
+title: Week 
 ---
 
 This week's content was so interesting!! So fascinating that we are able to converse with radio communication between two devices. 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Week 3 - Hand tools & Fabrication
+title: Week 3
 ---
 
 I don't consider myself an artist by any means, but I was excited to take on the challenge of building a kinetic sculpture! I have all kinds of random objects around my room, but when I found the mini hand my friend got me a couple years ago, I knew I had to use it. After I got my motor working with the potentiometer and attached the D-shaped piece, I took it for a spin!

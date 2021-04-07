@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Week 2 - 2D Design & Cutting
+title: Week 2
 ---
 
 This week, I worked with JuHye & Hugh to design our cardboard cutouts. JuHye had the great idea of designing a lightbox! 

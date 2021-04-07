@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Week 4 - Microcontroller Programming
+title: Week 4
 ---
 
 This week, I decided to do a continuation of my kinetic sculpture from last week. 
