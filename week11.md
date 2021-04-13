@@ -45,16 +45,16 @@ At this point, I'm thinking about how to make the photobooth look cute instead o
 
 Here's my code: 
 
-  let path = [];
-  let numPoints = 100;
-  let numBalls = 13;
-  let spring = 0.05;
-  let gravity = 0.03;
-  let friction = -0.9;
-  let balls = [];
+    let path = [];
+    let numPoints = 100;
+    let numBalls = 13;
+    let spring = 0.05;
+    let gravity = 0.03;
+    let friction = -0.9;
+    let balls = [];
 
-  function setup() {
-    createCanvas(710, 400, WEBGL);
+    function setup() {
+        createCanvas(710, 400, WEBGL);
 
       camera(0, -100, width * 1.5, 0, 0, 0, 0, 1, 0);
 
@@ -73,11 +73,11 @@ Here's my code:
       noStroke();
       fill(255, 204);
 
-  }
+    }
 
-  function draw() {
-    background(0);
-    orbitControl();
+    function draw() {
+        background(0);
+        orbitControl();
 
     drawGrid();
     drawAxis();
@@ -88,13 +88,13 @@ Here's my code:
       ball.move();
       ball.display();
       });
-  }
+    }
 
 
-  function drawAxis() {
-    let unit = 100;
-    strokeWeight(5);
-    //textSize(40);
+    function drawAxis() {
+        let unit = 100;
+        strokeWeight(5);
+        //textSize(40);
 
     // x axis
     stroke(255, 0, 0);
@@ -114,10 +114,10 @@ Here's my code:
     line(0, 0, 0, 0, 0, unit);
     fill(0, 0, 255);
     //text("Z", 0, 0, unit + 5);
-  }
+    }
 
-  function drawGrid() {
-    let cellSize = 50; 
+    function drawGrid() {
+        let cellSize = 50; 
 
     stroke(255);
     strokeWeight(1);
@@ -129,9 +129,9 @@ Here's my code:
     for (let y = 0; y <= height; y += cellSize) {
       line(0, y, width, y);
     }
-  }
+    }
 
-  function drawPath() {
+    function drawPath() {
 
     // Draw lines
     strokeWeight(3);
@@ -147,18 +147,18 @@ Here's my code:
     // path.forEach(p=>{
     // 	point(p.x, p.y, p.z);
     // })
-  }
-
-  class Ball {
-    constructor(xin, yin, din, idin, oin) {
-      this.x = xin;
-      this.y = yin;
-      this.vx = 0;
-      this.vy = 0;
-      this.diameter = din;
-      this.id = idin;
-      this.others = oin;
     }
+
+    class Ball {
+        constructor(xin, yin, din, idin, oin) {
+        this.x = xin;
+        this.y = yin;
+        this.vx = 0;
+        this.vy = 0;
+        this.diameter = din;
+        this.id = idin;
+        this.others = oin;
+        }
 
     collide() {
       for (let i = this.id + 1; i < numBalls; i++) {
@@ -211,8 +211,8 @@ Here's my code:
 
 
 
-  (function() {
-    'use strict';
+    (function() {
+        'use strict';
 
     document.addEventListener('DOMContentLoaded', event => {
       let connectButton = document.querySelector("#connect");
@@ -280,4 +280,4 @@ Here's my code:
       });
 
     });
-  })();
+    })();
