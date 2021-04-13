@@ -187,7 +187,7 @@ class Ball {
           let textDecoder = new TextDecoder();
           let decodedData = parseInt(textDecoder.decode(data), 10);
           if (isNumeric(decodedData)){
-      	
+			console.log(decodedData);
 			// Shift all elements 1 place to the left
 			for (let i=1; i < numPoints; i++ ) {
 				path[i-1] = path[i];
