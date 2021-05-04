@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 9
+navigation_weight: 9
 ---
 
 This week, I learned how to integrate Firebase in lab, turning on and off an LED. I think Firebase could have a lot of applications and uses for my final project when it comes to photos and storage. Generally, I think the Wifi unit will be really helpful. I hope to dive more into my final project next week. 

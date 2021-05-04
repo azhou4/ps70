@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 10
+navigation_weight: 10
 ---
 
 Stepper motors! I was stuck for a long time this week on what to do with them. On Thursday, however, after class I went to the

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 1
+navigation_weight: 1
 ---
 
 My idea is to build something for my dog. Originally, I was thinking I'd build him a dog toy, maybe a mechanical ball thrower that would throw the ball in different directions. However, I'm not too sure when I'll be able to go home next, and because I live in Australia, it would have to be something that is portable and convenient to transport. 

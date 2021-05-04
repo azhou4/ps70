@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 11
+navigation_weight: 11
 ---
 
 I had a lot of difficulty this week with different kinds of errors. 

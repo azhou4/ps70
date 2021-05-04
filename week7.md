@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 7
+navigation_weight: 7
 ---
 
 I've been inspired by everyone else's LED strip projects -- since I haven't worked with any LEDs yet, I decided this week to try out an LED strip as my output. Last week, I learned how to use the microphone -- why not combine the two? First, I set up the microphone just like I did last week.

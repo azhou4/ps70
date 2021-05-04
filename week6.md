@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 6
+navigation_weight: 6
 ---
 This week I learned how to use capacitator sensors and the microphone! I started with the microphone. I followed the instructions on the website -- pretty easy to follow! 
 ![Banana](assets/week6-micro.jpg)

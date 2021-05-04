@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 12
+navigation_weight: 12
 ---
 
 This week was a lot of fun! I felt like I was embracing a younger version of myself. It was really difficult finding objects that would fit the needs of the assignment given the constraints of my dorm room, but I settled on these two objects: a small cat eraser and a hippo keychain. 

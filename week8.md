@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 8
+navigation_weight: 8
 ---
 
 This week's content was so interesting!! So fascinating that we are able to converse with radio communication between two devices. 

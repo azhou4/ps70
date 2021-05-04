@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 4
+navigation_weight: 4
 ---
 
 This week, I decided to do a continuation of my kinetic sculpture from last week. 

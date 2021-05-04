@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Week 13
+navigation_weight: 13
 ---
 This week I checked in with Nathan and Sean about my final project. I was mainly unsure how to construct the overall look of the project, and Nathan suggested I use a poster board (like those 3rd grade tri-fold posters). Nathan also suggested creating a slide of some kind to make the treat dispenser fun! Originally I was thinking of using a button mechanism, but thinking about how dogs learn new tricks and adjust to new environments, some kind of pressure sensor or capacitative sensor might be easier. Another "nice to have" goal would be to construct a pan-tilt kit so that the camera could tilt!
 
