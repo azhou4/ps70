@@ -6,7 +6,9 @@ navigation_weight: 14
 
 # A Selfie Booth...for Dogs.
 
-## Demo Video
+## [Demo Video](https://www.youtube.com/watch?v=fJeeHrSD2aU&ab_channel=AmyZhou)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fJeeHrSD2aU/0.jpg)](https://www.youtube.com/watch?v=fJeeHrSD2aU&ab_channel=AmyZhou)
 
 
 ## Project Motivation
@@ -136,6 +138,13 @@ Donkey was completely a wildcard -- I had him for a limited amount of time and h
 Since Donkey was so excitable as a puppy, it was nearly impossible to get his eyes off the treat dispenser. As a result, using him as a test subject, I had to remove the treat dispenser from view. In addition, I really had to motivate him with a treat to press the sensors, since he didn't really understand the trick. 
 
 I realized from this that either the sensor has be placed far away from the camera, or there needs to be a delay between pressing the button and taking the photo. Unfortunately, I wasn't able to have Donkey for long enough to teach him the trick. Perhaps an older dog less excited by treats would be better suited!!
+
+## Some of the resulting photos!
+
+![photo](assets/week14-donkey.png)
+
+![photo](assets/week14_donkey2.png)
+
 
 ## Limitations
 
